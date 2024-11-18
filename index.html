@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function handleFormSubmission(event) {
+      event.preventDefault(); // Prevents the page from reloading
+
+      // Show a simple alert or display a thank you message
+      alert("Thank you for your message! We will get back to you soon.");
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Cake Bakery</h1>
+    <p>Delicious Cakes for Every Occasion!</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Our Special Cakes Section -->
+    <section>
+      <h2>Our Special Cakes</h2>
+      <p>At Cake Bakery, we bake cakes that are not only delicious but also look amazing! Here are a few of our best sellers:</p>
+      <ul>
+        <li>Chocolate Fudge Cake</li>
+        <li>Vanilla Bean Cake</li>
+        <li>Strawberry Shortcake</li>
+        <li>Red Velvet Cake</li>
+        <li>Carrot Cake</li>
+      </ul>
+    </section>
+
+    <!-- Menu Section with Images -->
+    <section>
+      <h2>Our Menu</h2>
+      <div class="menu-item">
+        <img src="images/img1.jpg" alt="Chocolate Fudge Cake">
+        <p><strong>Chocolate Fudge Cake</strong> - A rich and decadent chocolate cake layered with fudge frosting.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/img2.jpg" alt="Vanilla Bean Cake">
+        <p><strong>Vanilla Bean Cake</strong> - A soft, fluffy cake made with real vanilla beans and creamy frosting.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/img3.jpg" alt="Strawberry Shortcake">
+        <p><strong>Strawberry Shortcake</strong> - A light and airy cake filled with fresh strawberries and whipped cream.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <h2>Contact Us</h2>
+      <p>Want to place an order? Get in touch with us today!</p>
+      <form onsubmit="handleFormSubmission(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Cake Bakery | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
